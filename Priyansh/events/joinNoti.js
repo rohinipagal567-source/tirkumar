@@ -62,7 +62,7 @@ module.exports.run = async function({ api, event }) {
       }
       memLength.sort((a, b) => a - b);
 
-      (typeof threadData.customJoin == "undefined") ? msg = '𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗛𝗢 𝗚𝗬𝗔 𝗧𝗨𝗠𝗛𝗔𝗥𝗔\n━━━━━━━━━━━━━   🥰 {name}.\n𝗛𝗮𝗺𝗮𝗿𝗲 𝗚𝗿𝗼𝘂𝗽 𝗠𝗲 {threadName}\n━━━━━━━━━━━━━   𝗠𝗲𝗿𝗮 𝗣𝗿𝗲𝗳𝗶𝘅 [ . ] 𝗛𝗮𝗶 𝗘𝗻𝗷𝗼𝘆 𝗔𝗹𝘄𝗮𝘆𝘀 𝗦𝗺𝗶𝗹𝗶𝗻𝗴 🥰🍀' : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = 'WELCOME MADARCHOD {name}' : msg = threadData.customJoin;
       msg = msg
       .replace(/\{name}/g, nameArray.join(', '))
       .replace(/\{type}/g, (memLength.length > 1) ?  '𝗖𝗮́𝗰 𝗯𝗮̣𝗻' : '𝗕𝗮̣𝗻')
